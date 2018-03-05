@@ -1,0 +1,331 @@
+2018-03-05 17:49:09,251 - root - DEBUG - SCRIPT STARTED
+2018-03-05 17:49:09,293 - paramiko.transport - DEBUG - starting thread (client mode): 0x2163f5d0L
+2018-03-05 17:49:09,294 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_1.16.0
+2018-03-05 17:49:09,313 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.8
+2018-03-05 17:49:09,313 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2018-03-05 17:49:09,314 - paramiko.transport - DEBUG - kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group-exchange-sha1', u'diffie-hellman-group14-sha1', u'diffie-hellman-group1-sha1'] server key:[u'ssh-rsa', u'ssh-dss', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'arcfour'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'arcfour'] client mac:[u'hmac-sha1', u'hmac-ripemd160'] server mac:[u'hmac-sha1', u'hmac-ripemd160'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2018-03-05 17:49:09,314 - paramiko.transport - DEBUG - Kex agreed: diffie-hellman-group1-sha1
+2018-03-05 17:49:09,315 - paramiko.transport - DEBUG - Cipher agreed: aes128-ctr
+2018-03-05 17:49:09,315 - paramiko.transport - DEBUG - MAC agreed: hmac-sha1
+2018-03-05 17:49:09,315 - paramiko.transport - DEBUG - Compression agreed: none
+2018-03-05 17:49:09,382 - paramiko.transport - DEBUG - kex engine KexGroup1 specified hash_algo <built-in function openssl_sha1>
+2018-03-05 17:49:09,383 - paramiko.transport - DEBUG - Switch to new keys ...
+2018-03-05 17:49:09,394 - paramiko.transport - DEBUG - Adding ssh-rsa host key for 10.91.116.233: 525b3b2d4abf7dea1d16a467eab12379
+2018-03-05 17:49:09,422 - paramiko.transport - DEBUG - userauth is OK
+2018-03-05 17:49:09,463 - paramiko.transport - INFO - Authentication (password) successful!
+2018-03-05 17:49:09,496 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2018-03-05 17:49:09,497 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2018-03-05 17:49:09,497 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2018-03-05 17:49:09,502 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2018-03-05 17:49:09,505 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2018-03-05 17:49:10,607 - netmiko - DEBUG - read_channel:              .---.,
+            (      ``.
+       _     \        )    __      ________ _____   _____
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\
+           \  | /
+            \_|/                     ___ _    _____  ___   ___  _ ___
+                                    | __| |  | __\ \/ | \ / / \| | __|
+                                    | _|| |__| _| >  < \ V /| .` | _|
+                                    |_| |____|___/_/\_\ \_/ |_|\_|_|
+
+
+Versa FlexVNF software
+Release     :	16.1R1 (S3.1)
+Release date:	20171013
+Package ID  :	7774a5a	
+
+Last login: Mon Mar  5 12:08:32 2018 from 10.91.124.96
+admin@CPE26-sathish:~$ 
+2018-03-05 17:49:10,707 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:12,708 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:12,709 - netmiko - DEBUG - write_channel: 
+
+2018-03-05 17:49:12,810 - netmiko - DEBUG - read_channel: 
+admin@CPE26-sathish:~$ 
+2018-03-05 17:49:12,811 - netmiko - DEBUG - write_channel: cli
+
+2018-03-05 17:49:13,111 - netmiko - DEBUG - read_channel: cli
+
+
+             .---.,
+            (      ``.
+       _     \        )    __      ________ _____   _____
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\
+           \  | /
+            \_|/                   _  _ ___ _______      _____  ___ _  _____
+                                  | \| | __|_   _\ \    / / _ \| _ \ |/ / __|
+                                  | .` | _|  | |  \ \/\/ / (_) |   / ' <\__ \
+                                  |_|\_|___| |_|   \_/\_/ \___/|_|_\_|\_\___/
+
+
+
+admin connected from 10.91.124.96 using ssh on CPE26-sathish
+[?7hadmin@CPE26-sathish-cli> 
+2018-03-05 17:49:13,112 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:13,112 - netmiko - DEBUG - write_channel: 
+
+2018-03-05 17:49:13,213 - netmiko - DEBUG - read_channel: 
+admin@CPE26-sathish-cli> 
+2018-03-05 17:49:13,314 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:13,415 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:13,415 - netmiko - DEBUG - In disable_paging
+2018-03-05 17:49:13,415 - netmiko - DEBUG - Command: set screen length 0
+
+2018-03-05 17:49:13,416 - netmiko - DEBUG - write_channel: set screen length 0
+
+2018-03-05 17:49:13,416 - netmiko - DEBUG - Pattern is: admin\@CPE26\-sathish\-cli
+2018-03-05 17:49:13,432 - netmiko - DEBUG - _read_channel_expect read_data: set
+2018-03-05 17:49:13,532 - netmiko - DEBUG - _read_channel_expect read_data:  screen
+2018-03-05 17:49:13,633 - netmiko - DEBUG - _read_channel_expect read_data:  length 0
+
+2018-03-05 17:49:13,734 - netmiko - DEBUG - _read_channel_expect read_data: [ok][2018-03-05 12:16:52]
+admin@CPE26-sathish-cli> 
+2018-03-05 17:49:13,734 - netmiko - DEBUG - Pattern found: admin\@CPE26\-sathish\-cli set screen length 0
+[ok][2018-03-05 12:16:52]
+admin@CPE26-sathish-cli> 
+2018-03-05 17:49:13,734 - netmiko - DEBUG - set screen length 0
+[ok][2018-03-05 12:16:52]
+admin@CPE26-sathish-cli> 
+2018-03-05 17:49:13,734 - netmiko - DEBUG - Exiting disable_paging
+2018-03-05 17:49:13,735 - netmiko - DEBUG - write_channel: set screen width 0
+
+2018-03-05 17:49:13,735 - netmiko - DEBUG - Pattern is: admin\@CPE26\-sathish\-cli
+2018-03-05 17:49:13,736 - netmiko - DEBUG - _read_channel_expect read_data: set
+2018-03-05 17:49:13,837 - netmiko - DEBUG - _read_channel_expect read_data:  screen
+2018-03-05 17:49:13,937 - netmiko - DEBUG - _read_channel_expect read_data:  width 0
+
+2018-03-05 17:49:14,038 - netmiko - DEBUG - _read_channel_expect read_data: [ok][2018-03-05 12:16:53]
+admin@CPE26-sathish-cli> 
+2018-03-05 17:49:14,038 - netmiko - DEBUG - Pattern found: admin\@CPE26\-sathish\-cli set screen width 0
+[ok][2018-03-05 12:16:53]
+admin@CPE26-sathish-cli> 
+2018-03-05 17:49:14,339 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:19,340 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:19,340 - netmiko - DEBUG - write_channel: 
+
+2018-03-05 17:49:19,441 - netmiko - DEBUG - read_channel: 
+admin@CPE26-sathish-cli> 
+2018-03-05 17:49:19,541 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:19,542 - root - DEBUG - <netmiko.versa.versa_ssh.VersaSSH object at 0x7fb02163f490> connection opened
+2018-03-05 17:49:19,542 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:19,543 - netmiko - DEBUG - write_channel: 
+
+2018-03-05 17:49:19,643 - netmiko - DEBUG - read_channel: 
+admin@CPE26-sathish-cli> 
+2018-03-05 17:49:19,744 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:19,944 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:19,945 - netmiko - DEBUG - write_channel: show system package-info | tab
+
+2018-03-05 17:49:19,945 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:20,146 - netmiko - DEBUG - read_channel: show system package-info
+2018-03-05 17:49:20,148 - netmiko - DEBUG - read_channel:  |
+2018-03-05 17:49:20,148 - netmiko - DEBUG - read_channel:  tab
+2018-03-05 17:49:20,149 - netmiko - DEBUG - read_channel: 
+
+2018-03-05 17:49:20,149 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:20,350 - netmiko - DEBUG - read_channel: PACKAGE                                                                                     BUILD                     
+ID       MAJOR  MINOR  DATE      PACKAGE NAME                                      RELTYPE  TYPE   BRANCH    CREATOR  
+----------------------------------------------------------------------------------------------------------------------
+7774a5a  16     1      20171013  versa-flexvnf-20171013-152148-7774a5a-16.1R1-wsm  R1       S3.1   16.1R1S3  jenkins  
+
+[ok][2018-03-05 12:16:59]
+admin@CPE26-sathish-cli> 
+2018-03-05 17:49:20,351 - root - DEBUG - PACKAGE                                                                                     BUILD                     
+ID       MAJOR  MINOR  DATE      PACKAGE NAME                                      RELTYPE  TYPE   BRANCH    CREATOR  
+----------------------------------------------------------------------------------------------------------------------
+7774a5a  16     1      20171013  versa-flexvnf-20171013-152148-7774a5a-16.1R1-wsm  R1       S3.1   16.1R1S3  jenkins  
+
+[ok][2018-03-05 12:16:59]
+2018-03-05 17:49:20,352 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:20,353 - netmiko - DEBUG - write_channel: 
+
+2018-03-05 17:49:20,453 - netmiko - DEBUG - read_channel: 
+admin@CPE26-sathish-cli> 
+2018-03-05 17:49:20,553 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:20,754 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:20,755 - netmiko - DEBUG - write_channel: request system create-snapshot description PRE-UPGRADE-2018-03-05-17:49:20 no-confirm
+
+2018-03-05 17:49:20,755 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:20,956 - netmiko - DEBUG - read_channel: request system create-snapshot description
+2018-03-05 17:49:20,956 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:21,156 - netmiko - DEBUG - read_channel:  PRE-UPGRADE-2018-03-05-17:49:20 no-confirm
+
+2018-03-05 17:49:21,157 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:21,357 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:21,558 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:21,759 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:21,959 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:22,160 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:22,361 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:22,561 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:22,762 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:22,963 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:23,164 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:23,364 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:23,565 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:23,765 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:23,966 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:24,167 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:24,368 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:24,568 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:24,769 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:24,970 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:25,170 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:25,371 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:25,572 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:25,773 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:25,974 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:26,175 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:26,375 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:26,576 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:26,777 - netmiko - DEBUG - read_channel: status  System state saved (PRE-UPGRADE-2018-03-05-17:49:20) 
+[ok][2018-03-05 12:17:05]
+admin@CPE26-sathish-cli> 
+2018-03-05 17:49:26,777 - root - DEBUG - status  System state saved (PRE-UPGRADE-2018-03-05-17:49:20) 
+[ok][2018-03-05 12:17:05]
+2018-03-05 17:49:26,778 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:26,778 - netmiko - DEBUG - write_channel: 
+
+2018-03-05 17:49:26,879 - netmiko - DEBUG - read_channel: 
+admin@CPE26-sathish-cli> 
+2018-03-05 17:49:26,979 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:27,180 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:27,181 - netmiko - DEBUG - write_channel: show system snapshots | tab | match PRE-UPGRADE-2018-03-05-17:49:20
+
+2018-03-05 17:49:27,181 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:27,382 - netmiko - DEBUG - read_channel: show system snapshots 
+2018-03-05 17:49:27,383 - netmiko - DEBUG - read_channel: |
+2018-03-05 17:49:27,383 - netmiko - DEBUG - read_channel:  
+2018-03-05 17:49:27,384 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:27,584 - netmiko - DEBUG - read_channel: tab | match PRE-UPGRADE-2018-03-05-17:49:20
+
+2018-03-05 17:49:27,585 - netmiko - DEBUG - read_channel: 
+2018-03-05 17:49:27,785 - netmiko - DEBUG - read_channel: 20180305T121700  versa-flexvnf-20171013-152148-7774a5a-16.1R1-wsm  PRE-UPGRADE-2018-03-05-17:49:20  user      
+[ok][2018-03-05 12:17:06]
+admin@CPE26-sathish-cli> 
+2018-03-05 17:49:27,786 - root - DEBUG - 20180305T121700  versa-flexvnf-20171013-152148-7774a5a-16.1R1-wsm  PRE-UPGRADE-2018-03-05-17:49:20  user      
+[ok][2018-03-05 12:17:06]
+2018-03-05 17:49:47,799 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.91.127.194
+2018-03-05 17:49:48,843 - urllib3.connectionpool - DEBUG - https://10.91.127.194:9182 "POST /api/config/nms/actions/packages/upgrade HTTP/1.1" 200 None
+2018-03-05 17:49:48,856 - root - DEBUG - {
+  "output": {
+    "result": {
+      "task": {
+        "task-id": "13092",
+        "link": {
+          "rel": "GET",
+          "href": "api/operational/tasks/task/13092"
+        }
+      }
+    }
+  }
+}
+2018-03-05 17:49:48,857 - root - DEBUG - 13092
+2018-03-05 17:49:48,859 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.91.127.194
+2018-03-05 17:49:48,939 - urllib3.connectionpool - DEBUG - https://10.91.127.194:9182 "GET /api/operational/tasks/task/13092 HTTP/1.1" 200 None
+2018-03-05 17:49:48,941 - root - DEBUG - {u'task': {u'start-time': u'2018-03-05T02:27:51-00:00', u'task-name': u'Upgrade', u'domain-name': u',Colt,TEST-PRAVIN-BLR,', u'object-name': u'Appliance', u'task-status': u'PENDING', u'percentage-completion': 0, u'id': 13092, u'user': u'MSK'}}
+2018-03-05 17:49:48,941 - root - DEBUG - 0
+2018-03-05 17:50:08,962 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.91.127.194
+2018-03-05 17:50:09,181 - urllib3.connectionpool - DEBUG - https://10.91.127.194:9182 "GET /api/operational/tasks/task/13092 HTTP/1.1" 200 None
+2018-03-05 17:50:09,183 - root - DEBUG - {u'task': {u'end-time': u'2018-03-05T02:27:51-00:00', u'start-time': u'2018-03-05T02:27:51-00:00', u'task-description': u'Upgrade Appliance: CPE26-sathish', u'progressmessages': {u'progressmessage': [{u'message': u'Fetch package list from appliance...'}, {u'message': u'Verify uploaded package...'}, {u'message': u'Initiate upgrade on device...'}]}, u'task-name': u'Upgrade', u'domain-name': u',Colt,TEST-PRAVIN-BLR,', u'object-name': u'Appliance', u'user': u'MSK', u'percentage-completion': 50, u'id': 13092, u'task-status': u'IN_PROGRESS'}}
+2018-03-05 17:50:09,183 - root - DEBUG - 50
+2018-03-05 17:50:29,205 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.91.127.194
+2018-03-05 17:50:29,424 - urllib3.connectionpool - DEBUG - https://10.91.127.194:9182 "GET /api/operational/tasks/task/13092 HTTP/1.1" 200 None
+2018-03-05 17:50:29,426 - root - DEBUG - {u'task': {u'end-time': u'2018-03-05T02:27:51-00:00', u'start-time': u'2018-03-05T02:27:51-00:00', u'task-description': u'Upgrade Appliance: CPE26-sathish', u'progressmessages': {u'progressmessage': [{u'message': u'Fetch package list from appliance...'}, {u'message': u'Verify uploaded package...'}, {u'message': u'Initiate upgrade on device...'}, {u'message': u'Waiting for response from appliance...'}]}, u'task-name': u'Upgrade', u'domain-name': u',Colt,TEST-PRAVIN-BLR,', u'object-name': u'Appliance', u'user': u'MSK', u'percentage-completion': 60, u'id': 13092, u'task-status': u'IN_PROGRESS'}}
+2018-03-05 17:50:29,426 - root - DEBUG - 60
+2018-03-05 17:50:49,448 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.91.127.194
+2018-03-05 17:50:49,674 - urllib3.connectionpool - DEBUG - https://10.91.127.194:9182 "GET /api/operational/tasks/task/13092 HTTP/1.1" 200 None
+2018-03-05 17:50:49,677 - root - DEBUG - {u'task': {u'end-time': u'2018-03-05T02:27:51-00:00', u'start-time': u'2018-03-05T02:27:51-00:00', u'task-description': u'Upgrade Appliance: CPE26-sathish', u'progressmessages': {u'progressmessage': [{u'message': u'Fetch package list from appliance...'}, {u'message': u'Verify uploaded package...'}, {u'message': u'Initiate upgrade on device...'}, {u'message': u'Waiting for response from appliance...'}]}, u'task-name': u'Upgrade', u'domain-name': u',Colt,TEST-PRAVIN-BLR,', u'object-name': u'Appliance', u'user': u'MSK', u'percentage-completion': 60, u'id': 13092, u'task-status': u'IN_PROGRESS'}}
+2018-03-05 17:50:49,677 - root - DEBUG - 60
+2018-03-05 17:51:09,698 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.91.127.194
+2018-03-05 17:51:09,917 - urllib3.connectionpool - DEBUG - https://10.91.127.194:9182 "GET /api/operational/tasks/task/13092 HTTP/1.1" 200 None
+2018-03-05 17:51:09,920 - root - DEBUG - {u'task': {u'end-time': u'2018-03-05T02:27:51-00:00', u'start-time': u'2018-03-05T02:27:51-00:00', u'task-description': u'Upgrade Appliance: CPE26-sathish', u'progressmessages': {u'progressmessage': [{u'message': u'Fetch package list from appliance...'}, {u'message': u'Verify uploaded package...'}, {u'message': u'Initiate upgrade on device...'}, {u'message': u'Waiting for response from appliance...'}]}, u'task-name': u'Upgrade', u'domain-name': u',Colt,TEST-PRAVIN-BLR,', u'object-name': u'Appliance', u'user': u'MSK', u'percentage-completion': 60, u'id': 13092, u'task-status': u'IN_PROGRESS'}}
+2018-03-05 17:51:09,920 - root - DEBUG - 60
+2018-03-05 17:51:29,927 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.91.127.194
+2018-03-05 17:51:30,038 - urllib3.connectionpool - DEBUG - https://10.91.127.194:9182 "GET /api/operational/tasks/task/13092 HTTP/1.1" 200 None
+2018-03-05 17:51:30,040 - root - DEBUG - {u'task': {u'end-time': u'2018-03-05T02:27:51-00:00', u'start-time': u'2018-03-05T02:27:51-00:00', u'task-description': u'Upgrade Appliance: CPE26-sathish', u'progressmessages': {u'progressmessage': [{u'message': u'Fetch package list from appliance...'}, {u'message': u'Verify uploaded package...'}, {u'message': u'Initiate upgrade on device...'}, {u'message': u'Waiting for response from appliance...'}]}, u'task-name': u'Upgrade', u'domain-name': u',Colt,TEST-PRAVIN-BLR,', u'object-name': u'Appliance', u'user': u'MSK', u'percentage-completion': 60, u'id': 13092, u'task-status': u'IN_PROGRESS'}}
+2018-03-05 17:51:30,040 - root - DEBUG - 60
+2018-03-05 17:51:50,058 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.91.127.194
+2018-03-05 17:51:50,260 - urllib3.connectionpool - DEBUG - https://10.91.127.194:9182 "GET /api/operational/tasks/task/13092 HTTP/1.1" 200 None
+2018-03-05 17:51:50,262 - root - DEBUG - {u'task': {u'end-time': u'2018-03-05T02:27:51-00:00', u'start-time': u'2018-03-05T02:27:51-00:00', u'task-description': u'Upgrade Appliance: CPE26-sathish', u'progressmessages': {u'progressmessage': [{u'message': u'Fetch package list from appliance...'}, {u'message': u'Verify uploaded package...'}, {u'message': u'Initiate upgrade on device...'}, {u'message': u'Waiting for response from appliance...'}]}, u'task-name': u'Upgrade', u'domain-name': u',Colt,TEST-PRAVIN-BLR,', u'object-name': u'Appliance', u'user': u'MSK', u'percentage-completion': 60, u'id': 13092, u'task-status': u'IN_PROGRESS'}}
+2018-03-05 17:51:50,262 - root - DEBUG - 60
+2018-03-05 17:52:10,284 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.91.127.194
+2018-03-05 17:52:10,510 - urllib3.connectionpool - DEBUG - https://10.91.127.194:9182 "GET /api/operational/tasks/task/13092 HTTP/1.1" 200 None
+2018-03-05 17:52:10,512 - root - DEBUG - {u'task': {u'end-time': u'2018-03-05T02:27:51-00:00', u'start-time': u'2018-03-05T02:27:51-00:00', u'task-description': u'Upgrade Appliance: CPE26-sathish', u'progressmessages': {u'progressmessage': [{u'message': u'Fetch package list from appliance...'}, {u'message': u'Verify uploaded package...'}, {u'message': u'Initiate upgrade on device...'}, {u'message': u'Waiting for response from appliance...'}]}, u'task-name': u'Upgrade', u'domain-name': u',Colt,TEST-PRAVIN-BLR,', u'object-name': u'Appliance', u'user': u'MSK', u'percentage-completion': 60, u'id': 13092, u'task-status': u'IN_PROGRESS'}}
+2018-03-05 17:52:10,512 - root - DEBUG - 60
+2018-03-05 17:52:30,515 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.91.127.194
+2018-03-05 17:52:30,730 - urllib3.connectionpool - DEBUG - https://10.91.127.194:9182 "GET /api/operational/tasks/task/13092 HTTP/1.1" 200 None
+2018-03-05 17:52:30,733 - root - DEBUG - {u'task': {u'end-time': u'2018-03-05T02:27:51-00:00', u'start-time': u'2018-03-05T02:27:51-00:00', u'task-description': u'Upgrade Appliance: CPE26-sathish', u'progressmessages': {u'progressmessage': [{u'message': u'Fetch package list from appliance...'}, {u'message': u'Verify uploaded package...'}, {u'message': u'Initiate upgrade on device...'}, {u'message': u'Waiting for response from appliance...'}]}, u'task-name': u'Upgrade', u'domain-name': u',Colt,TEST-PRAVIN-BLR,', u'object-name': u'Appliance', u'user': u'MSK', u'percentage-completion': 60, u'id': 13092, u'task-status': u'IN_PROGRESS'}}
+2018-03-05 17:52:30,733 - root - DEBUG - 60
+2018-03-05 17:52:50,754 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.91.127.194
+2018-03-05 17:52:50,986 - urllib3.connectionpool - DEBUG - https://10.91.127.194:9182 "GET /api/operational/tasks/task/13092 HTTP/1.1" 200 None
+2018-03-05 17:52:50,988 - root - DEBUG - {u'task': {u'end-time': u'2018-03-05T02:27:51-00:00', u'start-time': u'2018-03-05T02:27:51-00:00', u'task-description': u'Upgrade Appliance: CPE26-sathish', u'progressmessages': {u'progressmessage': [{u'message': u'Fetch package list from appliance...'}, {u'message': u'Verify uploaded package...'}, {u'message': u'Initiate upgrade on device...'}, {u'message': u'Waiting for response from appliance...'}]}, u'task-name': u'Upgrade', u'domain-name': u',Colt,TEST-PRAVIN-BLR,', u'object-name': u'Appliance', u'user': u'MSK', u'percentage-completion': 60, u'id': 13092, u'task-status': u'IN_PROGRESS'}}
+2018-03-05 17:52:50,988 - root - DEBUG - 60
+2018-03-05 17:53:11,008 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.91.127.194
+2018-03-05 17:53:11,230 - urllib3.connectionpool - DEBUG - https://10.91.127.194:9182 "GET /api/operational/tasks/task/13092 HTTP/1.1" 200 None
+2018-03-05 17:53:11,232 - root - DEBUG - {u'task': {u'end-time': u'2018-03-05T02:27:51-00:00', u'start-time': u'2018-03-05T02:27:51-00:00', u'task-description': u'Upgrade Appliance: CPE26-sathish', u'progressmessages': {u'progressmessage': [{u'message': u'Fetch package list from appliance...'}, {u'message': u'Verify uploaded package...'}, {u'message': u'Initiate upgrade on device...'}, {u'message': u'Waiting for response from appliance...'}]}, u'task-name': u'Upgrade', u'domain-name': u',Colt,TEST-PRAVIN-BLR,', u'object-name': u'Appliance', u'user': u'MSK', u'percentage-completion': 60, u'id': 13092, u'task-status': u'IN_PROGRESS'}}
+2018-03-05 17:53:11,232 - root - DEBUG - 60
+2018-03-05 17:53:31,235 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.91.127.194
+2018-03-05 17:53:31,452 - urllib3.connectionpool - DEBUG - https://10.91.127.194:9182 "GET /api/operational/tasks/task/13092 HTTP/1.1" 200 None
+2018-03-05 17:53:31,454 - root - DEBUG - {u'task': {u'end-time': u'2018-03-05T02:27:51-00:00', u'start-time': u'2018-03-05T02:27:51-00:00', u'task-description': u'Upgrade Appliance: CPE26-sathish', u'progressmessages': {u'progressmessage': [{u'message': u'Fetch package list from appliance...'}, {u'message': u'Verify uploaded package...'}, {u'message': u'Initiate upgrade on device...'}, {u'message': u'Waiting for response from appliance...'}]}, u'task-name': u'Upgrade', u'domain-name': u',Colt,TEST-PRAVIN-BLR,', u'object-name': u'Appliance', u'user': u'MSK', u'percentage-completion': 60, u'id': 13092, u'task-status': u'IN_PROGRESS'}}
+2018-03-05 17:53:31,454 - root - DEBUG - 60
+2018-03-05 17:53:51,476 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.91.127.194
+2018-03-05 17:53:51,697 - urllib3.connectionpool - DEBUG - https://10.91.127.194:9182 "GET /api/operational/tasks/task/13092 HTTP/1.1" 200 None
+2018-03-05 17:53:51,699 - root - DEBUG - {u'task': {u'end-time': u'2018-03-05T02:27:51-00:00', u'start-time': u'2018-03-05T02:27:51-00:00', u'task-description': u'Upgrade Appliance: CPE26-sathish', u'progressmessages': {u'progressmessage': [{u'message': u'Fetch package list from appliance...'}, {u'message': u'Verify uploaded package...'}, {u'message': u'Initiate upgrade on device...'}, {u'message': u'Waiting for response from appliance...'}]}, u'task-name': u'Upgrade', u'domain-name': u',Colt,TEST-PRAVIN-BLR,', u'object-name': u'Appliance', u'user': u'MSK', u'percentage-completion': 60, u'id': 13092, u'task-status': u'IN_PROGRESS'}}
+2018-03-05 17:53:51,700 - root - DEBUG - 60
+2018-03-05 17:54:11,721 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.91.127.194
+2018-03-05 17:54:11,939 - urllib3.connectionpool - DEBUG - https://10.91.127.194:9182 "GET /api/operational/tasks/task/13092 HTTP/1.1" 200 None
+2018-03-05 17:54:11,941 - root - DEBUG - {u'task': {u'end-time': u'2018-03-05T02:27:51-00:00', u'start-time': u'2018-03-05T02:27:51-00:00', u'task-description': u'Upgrade Appliance: CPE26-sathish', u'progressmessages': {u'progressmessage': [{u'message': u'Fetch package list from appliance...'}, {u'message': u'Verify uploaded package...'}, {u'message': u'Initiate upgrade on device...'}, {u'message': u'Waiting for response from appliance...'}]}, u'task-name': u'Upgrade', u'domain-name': u',Colt,TEST-PRAVIN-BLR,', u'object-name': u'Appliance', u'user': u'MSK', u'percentage-completion': 60, u'id': 13092, u'task-status': u'IN_PROGRESS'}}
+2018-03-05 17:54:11,941 - root - DEBUG - 60
+2018-03-05 17:54:31,962 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.91.127.194
+2018-03-05 17:54:32,184 - urllib3.connectionpool - DEBUG - https://10.91.127.194:9182 "GET /api/operational/tasks/task/13092 HTTP/1.1" 200 None
+2018-03-05 17:54:32,186 - root - DEBUG - {u'task': {u'end-time': u'2018-03-05T02:27:51-00:00', u'start-time': u'2018-03-05T02:27:51-00:00', u'task-description': u'Upgrade Appliance: CPE26-sathish', u'progressmessages': {u'progressmessage': [{u'message': u'Fetch package list from appliance...'}, {u'message': u'Verify uploaded package...'}, {u'message': u'Initiate upgrade on device...'}, {u'message': u'Waiting for response from appliance...'}]}, u'task-name': u'Upgrade', u'domain-name': u',Colt,TEST-PRAVIN-BLR,', u'object-name': u'Appliance', u'user': u'MSK', u'percentage-completion': 60, u'id': 13092, u'task-status': u'IN_PROGRESS'}}
+2018-03-05 17:54:32,186 - root - DEBUG - 60
+2018-03-05 17:54:52,198 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.91.127.194
+2018-03-05 17:54:52,413 - urllib3.connectionpool - DEBUG - https://10.91.127.194:9182 "GET /api/operational/tasks/task/13092 HTTP/1.1" 200 None
+2018-03-05 17:54:52,416 - root - DEBUG - {u'task': {u'end-time': u'2018-03-05T02:27:51-00:00', u'start-time': u'2018-03-05T02:27:51-00:00', u'task-description': u'Upgrade Appliance: CPE26-sathish', u'progressmessages': {u'progressmessage': [{u'message': u'Fetch package list from appliance...'}, {u'message': u'Verify uploaded package...'}, {u'message': u'Initiate upgrade on device...'}, {u'message': u'Waiting for response from appliance...'}]}, u'task-name': u'Upgrade', u'domain-name': u',Colt,TEST-PRAVIN-BLR,', u'object-name': u'Appliance', u'user': u'MSK', u'percentage-completion': 60, u'id': 13092, u'task-status': u'IN_PROGRESS'}}
+2018-03-05 17:54:52,416 - root - DEBUG - 60
+2018-03-05 17:55:12,438 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.91.127.194
+2018-03-05 17:55:12,667 - urllib3.connectionpool - DEBUG - https://10.91.127.194:9182 "GET /api/operational/tasks/task/13092 HTTP/1.1" 200 None
+2018-03-05 17:55:12,669 - root - DEBUG - {u'task': {u'end-time': u'2018-03-05T02:27:51-00:00', u'start-time': u'2018-03-05T02:27:51-00:00', u'task-description': u'Upgrade Appliance: CPE26-sathish', u'progressmessages': {u'progressmessage': [{u'message': u'Fetch package list from appliance...'}, {u'message': u'Verify uploaded package...'}, {u'message': u'Initiate upgrade on device...'}, {u'message': u'Waiting for response from appliance...'}]}, u'task-name': u'Upgrade', u'domain-name': u',Colt,TEST-PRAVIN-BLR,', u'object-name': u'Appliance', u'user': u'MSK', u'percentage-completion': 60, u'id': 13092, u'task-status': u'IN_PROGRESS'}}
+2018-03-05 17:55:12,669 - root - DEBUG - 60
+2018-03-05 17:55:32,690 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.91.127.194
+2018-03-05 17:55:32,909 - urllib3.connectionpool - DEBUG - https://10.91.127.194:9182 "GET /api/operational/tasks/task/13092 HTTP/1.1" 200 None
+2018-03-05 17:55:32,911 - root - DEBUG - {u'task': {u'end-time': u'2018-03-05T02:27:51-00:00', u'start-time': u'2018-03-05T02:27:51-00:00', u'task-description': u'Upgrade Appliance: CPE26-sathish', u'progressmessages': {u'progressmessage': [{u'message': u'Fetch package list from appliance...'}, {u'message': u'Verify uploaded package...'}, {u'message': u'Initiate upgrade on device...'}, {u'message': u'Waiting for response from appliance...'}]}, u'task-name': u'Upgrade', u'domain-name': u',Colt,TEST-PRAVIN-BLR,', u'object-name': u'Appliance', u'user': u'MSK', u'percentage-completion': 60, u'id': 13092, u'task-status': u'IN_PROGRESS'}}
+2018-03-05 17:55:32,911 - root - DEBUG - 60
+2018-03-05 17:55:52,933 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.91.127.194
+2018-03-05 17:55:53,149 - urllib3.connectionpool - DEBUG - https://10.91.127.194:9182 "GET /api/operational/tasks/task/13092 HTTP/1.1" 200 None
+2018-03-05 17:55:53,151 - root - DEBUG - {u'task': {u'end-time': u'2018-03-05T02:27:51-00:00', u'start-time': u'2018-03-05T02:27:51-00:00', u'task-description': u'Upgrade Appliance: CPE26-sathish', u'progressmessages': {u'progressmessage': [{u'message': u'Fetch package list from appliance...'}, {u'message': u'Verify uploaded package...'}, {u'message': u'Initiate upgrade on device...'}, {u'message': u'Waiting for response from appliance...'}]}, u'task-name': u'Upgrade', u'domain-name': u',Colt,TEST-PRAVIN-BLR,', u'object-name': u'Appliance', u'user': u'MSK', u'percentage-completion': 60, u'id': 13092, u'task-status': u'IN_PROGRESS'}}
+2018-03-05 17:55:53,151 - root - DEBUG - 60
+2018-03-05 17:56:13,168 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.91.127.194
+2018-03-05 17:56:13,385 - urllib3.connectionpool - DEBUG - https://10.91.127.194:9182 "GET /api/operational/tasks/task/13092 HTTP/1.1" 200 None
+2018-03-05 17:56:13,388 - root - DEBUG - {u'task': {u'end-time': u'2018-03-05T02:27:51-00:00', u'start-time': u'2018-03-05T02:27:51-00:00', u'task-description': u'Upgrade Appliance: CPE26-sathish', u'progressmessages': {u'progressmessage': [{u'message': u'Fetch package list from appliance...'}, {u'message': u'Verify uploaded package...'}, {u'message': u'Initiate upgrade on device...'}, {u'message': u'Waiting for response from appliance...'}]}, u'task-name': u'Upgrade', u'domain-name': u',Colt,TEST-PRAVIN-BLR,', u'object-name': u'Appliance', u'user': u'MSK', u'percentage-completion': 60, u'id': 13092, u'task-status': u'IN_PROGRESS'}}
+2018-03-05 17:56:13,388 - root - DEBUG - 60
+2018-03-05 17:56:33,400 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.91.127.194
+2018-03-05 17:56:33,512 - urllib3.connectionpool - DEBUG - https://10.91.127.194:9182 "GET /api/operational/tasks/task/13092 HTTP/1.1" 200 None
+2018-03-05 17:56:33,514 - root - DEBUG - {u'task': {u'end-time': u'2018-03-05T02:27:51-00:00', u'start-time': u'2018-03-05T02:27:51-00:00', u'task-description': u'Upgrade Appliance: CPE26-sathish', u'progressmessages': {u'progressmessage': [{u'message': u'Fetch package list from appliance...'}, {u'message': u'Verify uploaded package...'}, {u'message': u'Initiate upgrade on device...'}, {u'message': u'Waiting for response from appliance...'}]}, u'task-name': u'Upgrade', u'domain-name': u',Colt,TEST-PRAVIN-BLR,', u'object-name': u'Appliance', u'user': u'MSK', u'percentage-completion': 60, u'id': 13092, u'task-status': u'IN_PROGRESS'}}
+2018-03-05 17:56:33,514 - root - DEBUG - 60
+2018-03-05 17:56:53,537 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.91.127.194
+2018-03-05 17:56:53,751 - urllib3.connectionpool - DEBUG - https://10.91.127.194:9182 "GET /api/operational/tasks/task/13092 HTTP/1.1" 200 None
+2018-03-05 17:56:53,753 - root - DEBUG - {u'task': {u'end-time': u'2018-03-05T02:27:51-00:00', u'start-time': u'2018-03-05T02:27:51-00:00', u'task-description': u'Upgrade Appliance: CPE26-sathish', u'progressmessages': {u'progressmessage': [{u'message': u'Fetch package list from appliance...'}, {u'message': u'Verify uploaded package...'}, {u'message': u'Initiate upgrade on device...'}, {u'message': u'Waiting for response from appliance...'}]}, u'task-name': u'Upgrade', u'domain-name': u',Colt,TEST-PRAVIN-BLR,', u'object-name': u'Appliance', u'user': u'MSK', u'percentage-completion': 60, u'id': 13092, u'task-status': u'IN_PROGRESS'}}
+2018-03-05 17:56:53,753 - root - DEBUG - 60
+2018-03-05 17:57:13,770 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.91.127.194
+2018-03-05 17:57:13,986 - urllib3.connectionpool - DEBUG - https://10.91.127.194:9182 "GET /api/operational/tasks/task/13092 HTTP/1.1" 200 None
+2018-03-05 17:57:13,988 - root - DEBUG - {u'task': {u'end-time': u'2018-03-05T02:27:51-00:00', u'start-time': u'2018-03-05T02:27:51-00:00', u'task-description': u'Upgrade Appliance: CPE26-sathish', u'progressmessages': {u'progressmessage': [{u'message': u'Fetch package list from appliance...'}, {u'message': u'Verify uploaded package...'}, {u'message': u'Initiate upgrade on device...'}, {u'message': u'Waiting for response from appliance...'}]}, u'task-name': u'Upgrade', u'domain-name': u',Colt,TEST-PRAVIN-BLR,', u'object-name': u'Appliance', u'user': u'MSK', u'percentage-completion': 60, u'id': 13092, u'task-status': u'IN_PROGRESS'}}
+2018-03-05 17:57:13,989 - root - DEBUG - 60
+2018-03-05 17:57:34,008 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.91.127.194
+2018-03-05 17:57:34,237 - urllib3.connectionpool - DEBUG - https://10.91.127.194:9182 "GET /api/operational/tasks/task/13092 HTTP/1.1" 200 None
+2018-03-05 17:57:34,239 - root - DEBUG - {u'task': {u'end-time': u'2018-03-05T02:27:51-00:00', u'start-time': u'2018-03-05T02:27:51-00:00', u'task-description': u'Upgrade Appliance: CPE26-sathish', u'progressmessages': {u'progressmessage': [{u'message': u'Fetch package list from appliance...'}, {u'message': u'Verify uploaded package...'}, {u'message': u'Initiate upgrade on device...'}, {u'message': u'Waiting for response from appliance...'}, {u'message': u'Updating package metadata...'}, {u'message': u'Perform sync-from device...'}]}, u'task-name': u'Upgrade', u'domain-name': u',Colt,TEST-PRAVIN-BLR,', u'object-name': u'Appliance', u'user': u'MSK', u'percentage-completion': 90, u'id': 13092, u'task-status': u'IN_PROGRESS'}}
+2018-03-05 17:57:34,240 - root - DEBUG - 90
+2018-03-05 17:57:54,250 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.91.127.194
+2018-03-05 17:57:54,488 - urllib3.connectionpool - DEBUG - https://10.91.127.194:9182 "GET /api/operational/tasks/task/13092 HTTP/1.1" 200 None
+2018-03-05 17:57:54,490 - root - DEBUG - {u'task': {u'end-time': u'2018-03-05T02:35:00-00:00', u'start-time': u'2018-03-05T02:27:51-00:00', u'task-description': u'Upgrade Appliance: CPE26-sathish', u'progressmessages': {u'progressmessage': [{u'message': u'Fetch package list from appliance...'}, {u'message': u'Verify uploaded package...'}, {u'message': u'Initiate upgrade on device...'}, {u'message': u'Waiting for response from appliance...'}, {u'message': u'Updating package metadata...'}, {u'message': u'Perform sync-from device...'}, {u'message': u'Successfully upgraded appliance.'}]}, u'task-name': u'Upgrade', u'domain-name': u',Colt,TEST-PRAVIN-BLR,', u'object-name': u'Appliance', u'user': u'MSK', u'percentage-completion': 100, u'id': 13092, u'task-status': u'COMPLETED'}}
+2018-03-05 17:57:54,491 - root - DEBUG - 100
