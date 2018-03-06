@@ -1,3 +1,16 @@
+"""
+This Tool is designed for upgrading Versa CPE.
+"""
+
+__author__ = "Sathishkumar murugesan"
+__copyright__ = "Copyright(c) 2018 Colt Technologies india pvt ltd."
+__credits__ = ["Danny Pinto", "Anoop Jhon"]
+__license__ = "GPL"
+__version__ = "1.0.1"
+__maintainer__ = "Sathishkumar Murugesan"
+__email__ = "Sathishkumar.Murugesan@colt.net"
+__status__ = "Developed"
+
 import templates as t1
 import json
 import pandas as pd
@@ -5,6 +18,8 @@ from datetime import datetime
 import logging
 import logging.handlers
 from Commands import *
+import pprint
+import getpass
 
 LOGFILE = "LOGS/upgrade_log_" + str(datetime.now()) + ".log"
 logger = logging.getLogger("")
@@ -21,6 +36,10 @@ def main():
     start_time = datetime.now()
     xl_file = 'upgrade_device_list.xlsx'
     pl = pd.read_excel(xl_file, 'Sheet1')
+    vd_dict = get_vd_details()
+    vdurl = 'https://' + vd_dict['ip'] + ':9182'
+    user = vd_dict['user']
+    passwd = vd_dict['passwd']
     upgrade_result = {}
     for i in range(len(pl.ix[:])):
         cpe_upgrade_result = 'FAILED'
@@ -38,15 +57,18 @@ def main():
         json_data = json.loads(body)
         net_connect = make_connection(dev_dict)
         pack_info = get_package_info(net_connect)
+        pprint.pprint(pack_info)
         print "**" * 40
         print "STEP 1 : CHECK PACKAGE INFO"
         print "**" * 40
+        logging.debug("package info from CPE" + pack_info['PACKAGE_NAME'])
+        logging.debug("package info from excel sheet" + pl.ix[i, 'package_info'])
         if pack_info['PACKAGE_NAME'] == pl.ix[i, 'package_info']:
             print pl.ix[i, 'device_name_in_vd'] + "     UPGRADE RESULT :"
             print "REASON: device already running with same package"
             print ">>" * 20 + "FAILED" + "<<" * 20
             upgrade_result[pl.ix[i, 'device_name_in_vd']] = 'FAILED - same package already available'
-            continue
+            # continue
         else:
             print "**" * 40
             print pl.ix[i, 'device_name_in_vd'] + " Package will be upgraded to " + pack_info['PACKAGE_NAME']
@@ -62,7 +84,7 @@ def main():
         #####REST OPERATIONS - begin #################
         print "**" * 40
         print "STEP 3: DO UPGRADE via REST API"
-        rest_result = rest_operation(json_data)
+        rest_result = rest_operation(vdurl, user, passwd, json_data)
         print "**" * 40
         #####REST OPERATIONS - end #################
         close_connection(net_connect)
@@ -74,15 +96,18 @@ def main():
         # rollback_snapshot(net_connect, snapshot_timestamp)
         time.sleep(50)
         pack_info_after_upgrade = get_package_info(net_connect)
+        pprint.pprint(pack_info_after_upgrade)
         package_after_upgrade = pack_info_after_upgrade['PACKAGE_NAME']
 
         if package_after_upgrade == pl.ix[i, 'package_info']:
             print "Upgrade Success"
-            print ">>" * 20 + pl.ix[i, 'device_name_in_vd'] + "   UPGRADE STATUS: " + rest_result + "<<" * 20
+            print package_after_upgrade
+            print pl.ix[i, 'package_info']
+            print ">>" * 20 + pl.ix[i, 'device_name_in_vd'] + "   UPGRADE  REST API TASK STATUS: " + rest_result + "<<" * 20
             upgrade_result[pl.ix[i, 'device_name_in_vd']] = 'Upgrade SUCCESS'
         else:
             print "Upgrade failed. please check device."
-            print ">>" * 20 + pl.ix[i, 'device_name_in_vd'] + "UPGRADE STATUS: " + rest_result + "<<" * 20
+            print ">>" * 20 + pl.ix[i, 'device_name_in_vd'] + "UPGRADE REST STATUS: " + rest_result + "<<" * 20
             upgrade_result[pl.ix[i, 'device_name_in_vd']] = 'Upgrade FAILED. Please check log for more details'
     print "+" * 104
     print "++++" * 10 + ' UPGRADE SUMMARY REPORT ' + "++++" * 10

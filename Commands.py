@@ -4,6 +4,17 @@ from string import Template
 from netmiko import ConnectHandler
 from Variables import *
 import logging
+import getpass
+
+
+def get_vd_details():
+    ip = raw_input("Enter Versa Director IP address:\n")
+    print "Versa director IP:" + ip
+    user = raw_input("Enter Versa Director Username:\n")
+    print "Versa director IP:" + user
+    passwd = raw_input("Enter Versa Director Password:\n")
+    print "Versa director IP:" + passwd
+    return {'ip' : ip, 'user': user, 'passwd' : passwd}
 
 
 def config_template(text, params1):
@@ -111,9 +122,9 @@ def convert_string_dict(output_str):
     return dict1
 
 
-def rest_operation(json_data):
-    response = requests.post(upgrade_dev_url,
-                             auth=('MSK', 'Versa@123'),
+def rest_operation(vd, user, passwd, json_data):
+    response = requests.post(vd + upgrade_dev_url,
+                             auth=(user, passwd),
                              headers=headers2,
                              json=json_data,
                              verify=False)
@@ -126,12 +137,13 @@ def rest_operation(json_data):
     logging.debug(taskid)
     percent_completed = 0
     while percent_completed < 100:
-        response1 = requests.get(task_url + taskid,
+        response1 = requests.get(vd + task_url + taskid,
                                  auth=('MSK', 'Versa@123'),
                                  headers=headers2,
                                  verify=False)
         data1 = response1.json()
         logging.debug(data1)
+        print data1
         percent_completed = data1['task']['percentage-completion']
         print percent_completed
         logging.debug(percent_completed)
