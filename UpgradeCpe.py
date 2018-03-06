@@ -68,7 +68,7 @@ def main():
             print "REASON: device already running with same package"
             print ">>" * 20 + "FAILED" + "<<" * 20
             upgrade_result[pl.ix[i, 'device_name_in_vd']] = 'FAILED - same package already available'
-            # continue
+            continue
         else:
             print "**" * 40
             print pl.ix[i, 'device_name_in_vd'] + " Package will be upgraded to " + pack_info['PACKAGE_NAME']
